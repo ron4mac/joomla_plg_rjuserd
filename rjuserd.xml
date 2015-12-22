@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_RJUSERD</name>
+	<author>Ron Crans</author>
+	<creationDate>August 2015</creationDate>
+	<copyright>(C) 2015 Ron Crans. All rights reserved.</copyright>
+	<license>GNU GPLv3 http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>ron@rjconline.net</authorEmail>
+	<authorUrl>http://rjconline.net</authorUrl>
+	<extensionUrl>http://www.joomla-specialist.net/joomla-extensions/joomla-simple-mobile-detection.html</extensionUrl>
+	<image>http://www.joomla-specialist.net/images/conflate/extensions/cmobile/icon-128-cmobile.png</image>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_RJUSERD_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="rjuserd">rjuserd.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addrulepath="/plugins/system/rjuserd">
+				<field name="datapath" type="text"
+					size="20"
+					default="userstor"
+					validate="rjuserdpath"
+					label="PLG_SYSTEM_RJUSERD_PATH_LABEL"
+					description="PLG_SYSTEM_RJUSERD_PATH_DESC"
+				/>
+				<field name="usrdeldata" type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					description="PLG_SYSTEM_RJUSERD_DELETE_DESC"
+					label="PLG_SYSTEM_RJUSERD_DELETE_LABEL"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
