@@ -1,7 +1,7 @@
 <?php
 defined('_JEXEC') or die;
 
-jimport('joomla.plugin.plugin');
+use Joomla\CMS\Filesystem\Folder;
 
 class plgSystemRjuserd extends JPlugin
 {
@@ -17,7 +17,7 @@ class plgSystemRjuserd extends JPlugin
 			$this->_delFolder('/@' . $user['id']);
 		}
 	}
-	
+
 	public function onUserAfterDeleteGroup ($group, $success, $msg)
 	{
 		if ($success) {
@@ -28,9 +28,8 @@ class plgSystemRjuserd extends JPlugin
 	private function _delFolder ($fold)
 	{
 		if ($this->params->get('usrdeldata', '0') == '1') {
-			jimport('joomla.filesystem.folder');
 			$udf = JPATH_SITE .'/'. $this->onRjuserDatapath() . $fold;
-			if (JFolder::exists($udf)) JFolder::delete($udf);
+			if (Folder::exists($udf)) Folder::delete($udf);
 		}
 	}
 

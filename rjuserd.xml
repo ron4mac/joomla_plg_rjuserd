@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.0" type="plugin" group="system" method="upgrade">
+<extension type="plugin" group="system" method="upgrade">
 	<name>PLG_SYSTEM_RJUSERD</name>
 	<author>Ron Crans</author>
-	<creationDate>August 2015</creationDate>
-	<copyright>(C) 2015 Ron Crans. All rights reserved.</copyright>
+	<creationDate>November 2021</creationDate>
+	<copyright>(C) 2021 Ron Crans. All rights reserved.</copyright>
 	<license>GNU GPLv3 http://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>ron@rjconline.net</authorEmail>
 	<authorUrl>http://rjconline.net</authorUrl>
-	<extensionUrl>http://www.joomla-specialist.net/joomla-extensions/joomla-simple-mobile-detection.html</extensionUrl>
-	<image>http://www.joomla-specialist.net/images/conflate/extensions/cmobile/icon-128-cmobile.png</image>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>PLG_SYSTEM_RJUSERD_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="rjuserd">rjuserd.php</filename>
